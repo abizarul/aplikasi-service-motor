@@ -1,0 +1,11 @@
+<?php
+namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
+
+class Kendaraan extends Model
+{
+    protected $primaryKey = 'no_plat_kendaraan';
+    public $incrementing = false;
+    protected $keyType = 'string';
+    protected $fillable = ['no_plat_kendaraan', 'jenis_kendaraan', 'no_stnk', 'tahun_pembuatan', 'nama_pemilik', 'warna_kendaraan'];
+}
